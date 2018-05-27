@@ -1,0 +1,42 @@
+/*      HEADER 
+ ********************/
+
+
+
+
+
+/* Access Navigation Toggle Button */
+
+.access__toggle {	
+	background: none;	
+	height: 30px;
+	margin-right: .5em;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	z-index: 999;
+	
+	span,
+	span:before,
+	span:after {
+		width: 100%;
+		height: 2px;
+		right: 0;
+		position: absolute;
+	}
+
+	span:before,
+	span:after {
+		content: '';
+	}
+
+}
+
+@media (min-width: $m) {
+	
+	.access__toggle {
+		display: none;
+	}
+	
+}

@@ -1,0 +1,64 @@
+/*     VARIABLES
+ *******************/
+
+
+
+/* Sizes */
+$max-width: 740px;
+$footer-height: 106px;
+
+
+
+/* Colors */
+
+// Descriptive color variables 
+
+$white          : #FFF;
+$black          : #000;
+$dark-grey      : #0E0F14;
+$purple		      : #452167;
+$light-purple   : #D9D2E0;
+$gold				    : #b47c2c;
+$light-gold     : #EFE5D4;
+$coral					: #E2906D;
+$light-pink			: #E7CCD1;
+$cream					: #FDFBF7;
+
+
+
+// Functional color variables
+
+$color-prim         : $light-pink;
+$color-sec          : $coral;
+$link               : $black;
+$hover              : $coral;
+$text               : $black;
+
+
+
+/* Fonts */
+$header-font: 'Frank Ruhl Libre', sans-serif;
+$body-font: 'Robot', sans-serif;
+
+
+
+/* Font Size */
+
+// See Mixins for the font size information
+
+$xsmall: 14px;
+$small:  16px;
+$medium: 18px;
+$large:  30px;
+$xlarge: 36px;
+
+
+
+/* Breakpoints */
+$xl: 1200px;
+$l: 1000px;
+$m: 850px;
+$s: 740px;
+$xs: 500px;
+
+

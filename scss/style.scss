@@ -1,0 +1,50 @@
+/*!
+Theme Name: Colleen Geohagan
+Author: Colleen Geohagan
+Author URI: https://colleengeohagan.com
+Description: Colleen Geohagan's Portfolio
+Version: 1.2
+License: The MIT License (MIT)
+License URI: http://opensource.org/licenses/MIT
+*/
+
+
+/* RESET & CONFIG
+------------------ */
+@import "config/reset"; 
+@import "config/fonts";
+@import "config/mixins";
+@import "config/variables";
+
+
+/* =BASE
+------------------ */
+@import "base";
+
+
+/* =LAYOUTS
+------------------ */
+@import "layout";
+
+
+/* =MODULES
+------------------ */
+@import "modules/header";
+@import "modules/main";
+@import "modules/footer";
+@import "modules/forms";
+
+
+/* =THEMES
+------------------ */
+@import "themes";
+
+
+/* =STATES
+------------------ */
+@import "states";
+
+
+/* =IE STYLES
+------------------ */
+@import "ie";

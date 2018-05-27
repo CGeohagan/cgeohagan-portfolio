@@ -1,0 +1,80 @@
+/*   MAIN 
+ ************/
+
+body {
+	display: flex;
+	background-color: $cream;
+}
+
+.main-header {
+	background-color: $cream;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	padding: 2em;
+}
+
+.navigation__list {
+	display: flex;
+	justify-content: center;
+
+	li {
+		list-style: none;
+		padding: 1em;
+	}
+}
+
+main {
+	width: 75vw;
+	margin-top: 150px;
+}
+
+.portfolio {
+
+	&__slider {
+		width: 300%;
+		transform: translateX(-62.5vw);
+
+	}
+
+	&__section {
+		float: left;
+		width: 75vw;
+		min-height: 100vh;
+	}
+
+}
+
+.section__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2em;
+}
+
+.section-1 {
+	background-color: $light-pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-2 {
+	background-color: $cream;
+}
+
+.section-3 {
+	background-color: $coral;
+}
+
+.about-image {
+	width: 30%;
+}
+
+
+
