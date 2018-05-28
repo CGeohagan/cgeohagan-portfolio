@@ -2,7 +2,32 @@
  ********************/
 
 
+/* Header and Navigation Styles */
 
+.main-header {
+	border-left: 8px solid $green;
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	padding: 2em;
+}
+
+.navigation__list {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 1em;
+
+	li {
+		list-style: none;
+		padding: .5em 0;
+	}
+}
 
 
 /* Access Navigation Toggle Button */

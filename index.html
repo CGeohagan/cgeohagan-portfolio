@@ -13,54 +13,105 @@
 		<header class="main-header">
 			<h1>Colleen Geohagan</h1>
 			<nav class="navigation__list">
-				<li>About</li>
-				<li>Work</li>
-				<li>Elsewhere</li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#work">Featured Work</a></li>
+				<li><a href="#elsewhere">Elsewhere</a></li>
 			</nav>
 		</header>
-		<main>
-			<div>			
-				<section class="section section-1" data-color="#BBD9D1">
+		<main>	
+				<section class="section section-0" data-color="#BBD9D1">
+					<svg class="section__background" viewBox="0 0 482 800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					  <defs>
+					    <path id="a" d="M0 0h492v803H0z"/>
+					  </defs>
+					  <g fill="none" fill-rule="evenodd">
+					    <mask id="b" fill="#fff">
+					      <use xlink:href="#a"/>
+					    </mask>
+					    <use fill="#FEFBF7" xlink:href="#a"/>
+					    <path fill="#E2906D" mask="url(#b)" d="M170-37.807L567.238-258l470.805 849.355-397.238 220.192z"/>
+					    <path fill="#E7CCD1" mask="url(#b)" d="M-54 935.575L475.684-20l431.665 239.276-529.684 955.575z"/>
+					  </g>
+					</svg>
+					<div class="section__wrapper">
+						<div class="section__header section__header-initial">
+							<h2>Hi there.<br>I'm Colleen</h2>
+						</div>
+					</div>
+				</section>
+				<section id="about" class="section section-1" data-color="#BBD9D1">
 					<div class="section__wrapper">
 						<div class="section__header">
-							<h2>Hi there.<br>I'm Colleen</h2>
+							<h2>About</h2>
 						</div>
 						<p class="section__paragraph">I'm a Front End Developer based out of Charlotte, NC. I have a passion for solving problems and creating beautiful, smart websites. I also love cats, cake, film photography, Harry Potter, and yoga.</p>
 						<figure class="about-image"><img src="assets/images/ColleenGeohaganPortrait.jpg" alt="photo of Colleen"></figure>
 					</div>
 				</section>
-				<section class="section section-2" data-color="#E7CCD1">	
+				<section id="work" class="section section-2" data-color="#E7CCD1">	
 					<div class="section__wrapper">
 						<div class="section__header">
-							<h2>Work</h2>
+							<h2>Featured Work</h2>
 						</div>
 						<div class="project">
-							<h3>Project 1</h3>
-							<p>Description of project</p>
-							<div>
-								<img src="" alt="" class="">
+							<h3>Delighted Calligraphy</h3>
+							<div class="project__wrapper">
+								<img src="assets/images/DelightedCalligraphy.png" alt="" class="">
+								<div class="project__overlay">
+									<div class="project__shape"></div>
+									<p>Details</p>
+								</div>
+								<div class="project__description">
+									<h4>Web Design and Development</h4>
+									<p>A Wordpress site created for a dreamy calligraphy studio.</p>
+									<a class="project__link" target="_blank" href="https://delightedcalligraphy.com/">Go there</a>
+								</div>
 							</div>
 						</div>
 						<div class="project">
-							<h3>Project 1</h3>
-							<p>Description of project</p>
-							<div>
-								<img src="" alt="" class="">
+							<h3>CG Studio</h3>
+							<div class="project__wrapper">
+								<img src="assets/images/CGStudio.png" alt="" class="">
+								<div class="project__overlay">
+									<div class="project__shape"></div>
+									<p>Details</p>
+								</div>
+								<div class="project__description">
+									<h4>Web Design and Development</h4>
+									<p>A storefront for my web design and development studio.</p>
+									<a class="project__link" target="_blank" href="https://cgstudio.co/">Go there</a>
+								</div>
+							</div>
+						</div>
+						<div class="project">
+							<h3>Two Delighted</h3>
+							<div class="project__wrapper">
+								<img src="assets/images/TwoDelighted.png" alt="" class="">
+								<div class="project__overlay">
+									<div class="project__shape"></div>
+									<p>Details</p>
+								</div>
+								<div class="project__description">
+									<h4>Web Design and Development</h4>
+									<p>A website I created for my lifestyle blog.</p>
+									<a class="project__link" target="_blank" href="https://twodelighted.com">Go there</a>
+								</div>
 							</div>
 						</div>
 					</div>				
 				</section>
-				<section class="section section-3" data-color="#E2906D">
+				<section id="elsewhere" class="section section-3" data-color="#E2906D">
 					<div class="section__wrapper">
-						<h2>Elsewhere</h2>
+						<div class="section__header">
+							<h2>Elsewhere</h2>
+						</div>
 						<div>
-							<p>List print shop, where house has been featured, blog, social stuff</p>
+							<p class="section__paragraph">List print shop, where house has been featured, blog, social stuff</p>
 						</div>
 					</div>
 				</section>
-			</div>
 		</main>
 		<footer></footer>
-		<script src=""></script>
+		<script src="assets/js/app.js"></script>
 	</body>
 </html>

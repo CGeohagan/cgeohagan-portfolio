@@ -26,32 +26,6 @@ svg {
 
 
 
-/* Menu States */
-
-@media (max-width: $m) {
-	.menu-container .menu {
-		@include transition(all);
-		opacity: 0;
-		transform: translateX(100%);
-	}
-
-	.is-menu-active .menu {
-		@include transition(all);
-		opacity: 1;
-		transform: translateX(0%);
-	}
-}
-
-.logo-small-is-active {
-	display: block;
-}
-
-.box-shadow {
-	box-shadow: 0 5px 10px rgba(0,0,0,.05);
-}
-
-
-
 /* Access Navigation Toggle Button */
 
 .access__toggle {
@@ -98,59 +72,37 @@ svg {
 
 
 
-/* Logo Animations and States */
+/* Project Transitions */
 
-.is-logo-hidden,
-.is-small-logo-active {
-	animation-duration: .4s;
-	transition-timing-function: ease-in;
-	animation-fill-mode: both;
+.project {
+	&__overlay {
+		transform: translateX(100%);
+		@include transition(transform)
+	}
+
+	&:hover &__overlay {
+		transform: translateX(0);
+	}
+
+	&__description {
+		transform: translateX(100%);
+		@include transition(transform)
+	}
 }
 
-.is-small-logo-active {
-	animation-name: smallLogo;
-	display: block;
-}
+.is-project-active {
 
-.is-logo-hidden {
-	animation-name: bigLogo;
-}
+	&:hover .project__overlay,
+	.project__overlay {
+		transform: translateX(-100%);
+	}
 
-.access .is-menu-not-centered {
-	margin: 0;
-}
-
-@keyframes smallLogo {
+	.project__description {
+		transform: translateX(0);
+	}
 	
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-
 }
 
-@keyframes bigLogo {
-	
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-
-}
-
-
-
-/* Slider Transitions */
-
-.slider__list {
-	@include transition(transform);
-}
 
 
 
